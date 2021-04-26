@@ -64,18 +64,28 @@ temp_data =  [19, 21, 21, 21, 23, 23, 23, 21, 19, 21, 19, 21, 23, 27, 27, 28, 30
 #         3. Add the `temp_class` value to the `temp_classes` list
 
 
-# YOUR CODE HERE
+# YOUR CODE
+from temp_functions import fahr_to_celsius,temp_classifier
+temp_classes=[]
+for i in range(len(temp_data)):
+  temp_celsius=fahr_to_celsius(i)
+  temp_class=(temp_classifier(temp_celsius))
+  temp_classes.append(temp_class)
 
 # #### Part 2 (continues)
 # 
 # 6. Calculate how many temperatures there are in each temperature class:
 # 
-#     1. Create four variables called `zeros`, `ones`, `twos`, and `threes` 
+#     1. Create four variables ca
+#lled `zeros`, `ones`, `twos`, and `threes` 
 #     2. Count and assign to each variable how many times values 0, 1, 2, and 3 are present in the `temp_classes` list and print out the results below. In other words, assign the value of how many time `0` is in the list to the variable `zeros`, and so on. 
 #   
 
 # YOUR CODE HERE
-
+zeros=temp_classes.count(0)
+ones=temp_classes.count(1)
+twos=temp_classes.count(2)
+threes=temp_classes.count(3)
 # **TIP**: You might want to consider using a [**count()** function](https://www.tutorialspoint.com/python3/list_count.htm) OR a for loop for this.
 
 # ### Problem 3 tests
@@ -91,7 +101,7 @@ print(zeros,ones,twos,threes)
 # CAUTION! Don't edit this line ends
 
 # ### Check your code
-#  
+
 # - Remeber to check that your have commented your code and used the required variable names. 
 # - If you have any comments and concerns at this point, you can write them below:
 

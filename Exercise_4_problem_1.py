@@ -19,7 +19,9 @@
 # - Adding comments in your code and a docstring that explains how to use your `fahr_to_celsius` function (i.e., you should write the purpose of the function, parameters, and returned values)
 
 # YOUR CODE HERE
-
+def fahr_to_celsius(temp_fahrenheit):
+  converted_temp=(temp_fahrenheit-32)/1.8
+  return converted_temp
 # ### Problem 1 tests
 # 
 # Check that the function produces correct answers for:
@@ -27,7 +29,8 @@
 # 2. What about 71° Fahrenheit in Celsius?
 
 # ### Check your code
-# 
+print("48°：",round(fahr_to_celsius(48),2))
+print("71°：",round(fahr_to_celsius(71),2))
 # - Make sure you used the given variable names
 # - Check that you have added necessary comments to your code
 # - Check that your function has a docstring that describes what it does
