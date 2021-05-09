@@ -19,6 +19,11 @@
 # - Adding comments in your code and a docstring that explains how to use your `fahr_to_celsius` function (i.e., you should write the purpose of the function, parameters, and returned values)
 
 # YOUR CODE HERE
+
+#Funcion named "fahr_to_celsius" means that converts Fahrenheit to Celsius
+#converted_temp・・It is variable and means Celsius
+#temp_fahrenheit・・It is variable and means Fahrenheit
+#returned value is converted _temp
 def fahr_to_celsius(temp_fahrenheit):
   converted_temp=(temp_fahrenheit-32)/1.8
   return converted_temp
@@ -29,6 +34,7 @@ def fahr_to_celsius(temp_fahrenheit):
 # 2. What about 71° Fahrenheit in Celsius?
 
 # ### Check your code
+#These CODE indicate Celsius of 48° and　71°. 
 print("48°：",round(fahr_to_celsius(48),2))
 print("71°：",round(fahr_to_celsius(71),2))
 # - Make sure you used the given variable names
@@ -45,8 +51,8 @@ print("71°：",round(fahr_to_celsius(71),2))
 # Write your answers below:
 
 # YOUR ANSWER HERE. Write your answers as comments
-#
-#
+# 1,Yes.
+# 2,Benefits using function are                                ・we can reduce repetition of CODE                           ・we can make the code easier to read by using functions
 #
 #
 
