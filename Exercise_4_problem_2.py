@@ -25,6 +25,13 @@
 
 
 # YOUR CODE HERE to define temp_classifier
+#temp_celsius・・It is variable of celsius                   
+#The way to use this function is                              #first, input temp_celsius.
+#if temp_celsius<-2, returned value is 0
+#if (temp_celsius>=-2) and (temp_celsius<2), returned value is 1
+#if (temp_celsius>=2) and (temp_celsius<15), returned value is 2
+#if temp_celsius>=15, returned value is 3
+
 def temp_classifier(temp_celsius):
   if(temp_celsius<-2):
     return 0
@@ -76,8 +83,8 @@ print("ok :)")
 
 # YOUR ANSWER HERE. Write your answer as comments
 #  - All the variable names are correct.
-#  - 
-#
+#  - Yes, I added enough comments.
+#  - Yes, my function has an informative dostring.
 #
 #
 # YOUR ANSWER ENDS HERE

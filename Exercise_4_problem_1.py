@@ -24,6 +24,7 @@
 #converted_temp・・It is variable and means Celsius
 #temp_fahrenheit・・It is variable and means Fahrenheit
 #returned value is converted _temp
+#The way to using this function is 
 def fahr_to_celsius(temp_fahrenheit):
   converted_temp=(temp_fahrenheit-32)/1.8
   return converted_temp
